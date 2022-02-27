@@ -1,0 +1,30 @@
+{
+  "name": "azure-devops-ui-react-hook-form",
+  "version": "1.0.0",
+  "description": "Azure DevOps UI components that work directly with React Form Hook.",
+  "scripts": {
+    "build": "node buildpackage.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LockTar/azure-devops-ui-react-hook-form.git"
+  },
+  "keywords": [
+    "react",
+    "npm",
+    "azure",
+    "azure",
+    "devops",
+    "ado",
+    "rhf",
+    "react",
+    "hook",
+    "form"
+  ],
+  "author": "LockTar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LockTar/azure-devops-ui-react-hook-form/issues"
+  },
+  "homepage": "https://github.com/LockTar/azure-devops-ui-react-hook-form#readme"
+}

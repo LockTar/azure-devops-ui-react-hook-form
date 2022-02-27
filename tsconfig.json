@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "module": "amd",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "target": "es2021",
+    "rootDir": "src/",
+    "outDir": "dist/",
+    "jsx": "react",
+    "lib": ["es2021", "dom"],
+    "types": ["react"],
+    "resolveJsonModule": true
+  },
+  "exclude": []
+}
