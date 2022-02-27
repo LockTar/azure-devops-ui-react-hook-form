@@ -12,9 +12,9 @@
  
  (async function() {
  
-     // Clean bin directory
-     console.log("# Cleaning bin. Running shelljs rm -rf ./bin");
-     shell.rm("-rf", "./bin");
+     // Clean dist directory
+     console.log("# Cleaning dist. Running shelljs rm -rf ./dist");
+     shell.rm("-rf", "./dist");
  
      // Compile typescript
      console.log("# Compiling TypeScript. Executing `node_modules\\.bin\\tsc -p ./tsconfig.json`.");
@@ -29,10 +29,10 @@
          process.exit(1);
      }
  
-     // Copy ts files to bin
-     console.log("# Copy declare files to bin.");
+     // Copy ts files to dist
+     console.log("# Copy declare files to dist.");
      try {
-         await copy(path.join(__dirname, "src"), path.join(__dirname, "bin"), {
+         await copy(path.join(__dirname, "src"), path.join(__dirname, "dist"), {
              filter: f => {
                  return f.endsWith(".d.ts");
              },
@@ -46,7 +46,7 @@
      let count = 0;
  
      const files = await new Promise((resolve, reject) => {
-         glob("./bin/**/*.js", (err, files) => {
+         glob("./dist/**/*.js", (err, files) => {
              if (err) {
                  reject(err);
              } else {
@@ -68,12 +68,12 @@
      }
      console.log(`-- Minified ${count} files.`);
  
-     // Copy package.json, LICENSE, README.md to bin
-     console.log("# Copying package.json, LICENSE, and README.md to bin.");
+     // Copy package.json, LICENSE, README.md to dist
+     console.log("# Copying package.json, LICENSE, and README.md to dist.");
      try {
-         await copy(path.join(__dirname, "package.json"), path.join(__dirname, "bin", "package.json"));
-         await copy(path.join(__dirname, "LICENSE"), path.join(__dirname, "bin", "LICENSE"));
-         await copy(path.join(__dirname, "README.md"), path.join(__dirname, "bin", "README.md"));
+         await copy(path.join(__dirname, "package.json"), path.join(__dirname, "dist", "package.json"));
+         await copy(path.join(__dirname, "LICENSE"), path.join(__dirname, "dist", "LICENSE"));
+         await copy(path.join(__dirname, "README.md"), path.join(__dirname, "dist", "README.md"));
      } catch (error) {
          console.log("ERROR: Failed to copy package.json, LICENSE, or README.md - " + error);
      }
