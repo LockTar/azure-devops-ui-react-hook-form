@@ -15,5 +15,5 @@
     "types": ["react"],
     "resolveJsonModule": true
   },
-  "exclude": []
+  "exclude": ["node_modules", "typings"]
 }
