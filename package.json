@@ -26,5 +26,9 @@
   "bugs": {
     "url": "https://github.com/LockTar/azure-devops-ui-react-hook-form/issues"
   },
-  "homepage": "https://github.com/LockTar/azure-devops-ui-react-hook-form#readme"
+  "homepage": "https://github.com/LockTar/azure-devops-ui-react-hook-form#readme",
+  "dependencies": {
+    "azure-devops-ui": "^2.167.31",
+    "react-hook-form": "^7.27.1"
+  }
 }
