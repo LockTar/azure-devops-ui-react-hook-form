@@ -1,19 +1,13 @@
 {
   "compilerOptions": {
-    "module": "amd",
-    "moduleResolution": "node",
-    "sourceMap": true,
-    "noImplicitAny": true,
-    "noImplicitThis": true,
-    "forceConsistentCasingInFileNames": true,
+    "target": "ES2015",
+    "module": "commonjs",
     "strict": true,
-    "target": "es2021",
-    "rootDir": "src/",
-    "outDir": "dist/",
-    "jsx": "react",
-    "lib": ["es2021", "dom"],
-    "types": ["react"],
-    "resolveJsonModule": true
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "react"
   },
-  "exclude": ["node_modules", "typings"]
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Recommended"
 }
