@@ -1,5 +1,5 @@
 # Azure DevOps UI - React Hook Form
-Azure DevOps UI components that work directly with React Form Hook.
+[Azure DevOps UI components](https://developer.microsoft.com/en-us/azure-devops/components) that work directly with [React Hook Form](https://react-hook-form.com).
 
 ## Contribute
 
