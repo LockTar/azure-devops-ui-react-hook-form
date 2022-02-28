@@ -1,6 +1,6 @@
 {
   "name": "azure-devops-ui-react-hook-form",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Azure DevOps UI components that work directly with React Form Hook.",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
